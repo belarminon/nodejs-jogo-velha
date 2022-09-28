@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jogo da Velha</a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li id="salva-local" class="nav-item">
+                        <a class="nav-link" href="#">Salvar Local
+                            <!-- <span class="visually-hidden">(current)</span> -->
+                        </a>
+                    </li>
+                    <li id="carrega-local" class="nav-item">
+                        <a class="nav-link" href="#">Carregar Local</a>
+                    </li>
+                    <li id="limpa-local" class="nav-item">
+                        <a class="nav-link" href="#">Limpar Local</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="jogador-x" class="form-control me-sm-2" type="text" placeholder="Jogador X">
+                    <input id="jogador-o" class="form-control me-sm-2" type="text" placeholder="Jogador 0">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="velha" class="velha">
+
+        <div class="coluna">
+            <span data-id="0" class="quadro"></span>
+            <span data-id="1" class="quadro"></span>
+            <span data-id="2" class="quadro"></span>
+        </div>
+
+        <div class="coluna">
+            <span data-id="3" class="quadro"></span>
+            <span data-id="4" class="quadro"></span>
+            <span data-id="5" class="quadro"></span>
+        </div>
+
+        <div class="coluna">
+            <span data-id="6" class="quadro"></span>
+            <span data-id="7" class="quadro"></span>
+            <span data-id="8" class="quadro"></span>
+        </div>
+
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
